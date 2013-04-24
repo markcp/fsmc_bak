@@ -9,11 +9,16 @@ gem 'jbuilder', '~> 1.0.1'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'spork-rails', github: 'railstutorial/spork-rails'
+  gem 'guard-spork'
 end
 
 group :test do
   gem 'selenium-webdriver'
-  gem 'capybara'
+  gem 'capybara'  
+  gem 'rb-fsevent', require: false
+  gem 'terminal-notifier-guard'
 end
 
 group :assets do
